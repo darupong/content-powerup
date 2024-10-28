@@ -50,46 +50,45 @@ export default function Home() {
 
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]`}
+      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen bg-gray-900 text-white font-[family-name:var(--font-geist-sans)]`}
     >
       {/* Sticky Navbar */}
-      <nav className="navbar bg-base-100 shadow-lg sticky top-0 z-50 py-4 w-full">
+      <nav className="navbar bg-gray-800 shadow-lg sticky top-0 z-50 py-4 w-full">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex-1">
             <Image
               src={ImgLogo}
-              alt={""}
+              alt="Logo"
               className="w-40 sm:w-48 md:w-60 h-auto"
             />
           </div>
           <div className="flex-none">
-            <button className="btn btn-outline btn-secondary text-xs sm:text-sm md:text-md lg:text-lg">
-              <a
-                href="https://forms.gle/PEpUHnLQwiEzxAMv8"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ลงทะเบียนเข้าร่วมงาน ฟรี!
-              </a>
-            </button>
+            <a
+              href="https://forms.gle/PEpUHnLQwiEzxAMv8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline btn-secondary text-xs sm:text-sm md:text-md lg:text-lg text-white border-white hover:bg-gray-700"
+            >
+              ลงทะเบียนเข้าร่วมงาน ฟรี!
+            </a>
           </div>
         </div>
       </nav>
 
       {/* Main Content */}
-      <div className="flex flex-col row-start-2 items-center sm:items-start  p-0 pt-2 ">
+      <div className="flex flex-col row-start-2 items-center sm:items-start p-0 pt-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="flex flex-col justify-center items-center">
             <Image
               src={ImgLogo}
-              alt={""}
+              alt="Logo CTP"
               className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[800px] h-auto"
             />
           </div>
           <div className="flex flex-col justify-center items-center">
             <Image
               src={S1}
-              alt={""}
+              alt="Seminar Image"
               className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto"
             />
           </div>
@@ -97,7 +96,7 @@ export default function Home() {
       </div>
 
       {/* Countdown Section */}
-      <div className="bg-base-100 w-full h-auto py-10 flex flex-col items-center justify-center space-y-6">
+      <div className="bg-gray-800 w-full h-auto py-10 flex flex-col items-center justify-center space-y-6 text-white">
         <div>
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
             งานสัมมนาจะเริ่มใน
@@ -114,7 +113,7 @@ export default function Home() {
             return (
               <div
                 key={unit}
-                className="flex flex-col items-center justify-center border-2 border-gray-400 rounded-lg w-16 h-16 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40"
+                className="flex flex-col items-center justify-center border-2 border-gray-400 rounded-lg w-16 h-16 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 bg-gray-700 text-white"
               >
                 <span className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold">
                   {value}
@@ -127,31 +126,30 @@ export default function Home() {
           })}
         </div>
         <div>
-          <button className="btn btn-outline btn-secondary btn-sm sm:btn-sm md:btn-md lg:btn-lg">
-            <a
-              href="https://forms.gle/PEpUHnLQwiEzxAMv8"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ลงทะเบียนเข้าร่วมงาน
-            </a>
-          </button>
+          <a
+            href="https://forms.gle/PEpUHnLQwiEzxAMv8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline btn-secondary btn-sm sm:btn-sm md:btn-md lg:btn-lg text-white border-white hover:bg-gray-700"
+          >
+            ลงทะเบียนเข้าร่วมงาน
+          </a>
         </div>
       </div>
       <div className="pt-10">
         <Image
           src={PP}
-          alt={""}
+          alt="Poster"
           className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
         />
         <Image
           src={P1}
-          alt={""}
+          alt="Image 7"
           className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
         />
         <Image
           src={P2}
-          alt={""}
+          alt="Image 8"
           className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
         />
       </div>
