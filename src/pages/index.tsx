@@ -9,6 +9,8 @@ import S3 from "../../public/imgs/2.jpg";
 import S4 from "../../public/imgs/3.jpg";
 import S5 from "../../public/imgs/4.jpg";
 import S6 from "../../public/imgs/5.jpg";
+import S7 from "../../public/imgs/7.jpg";
+import S8 from "../../public/imgs/8.jpg";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -167,6 +169,16 @@ export default function Home() {
         />
         <Image
           src={S6}
+          alt="Poster"
+          className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
+        />
+        <Image
+          src={S7}
+          alt="Poster"
+          className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
+        />
+        <Image
+          src={S8}
           alt="Poster"
           className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
         />
