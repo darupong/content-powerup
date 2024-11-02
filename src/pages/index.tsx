@@ -4,8 +4,11 @@ import localFont from "next/font/local";
 import ImgLogo from "../../public/imgs/LogoCTP.png";
 import S1 from "../../public/imgs/s1.png";
 import PP from "../../public/imgs/poster.jpg";
-import P1 from "../../public/imgs/7.jpg";
-import P2 from "../../public/imgs/8.jpg";
+import S2 from "../../public/imgs/1.jpg";
+import S3 from "../../public/imgs/2.jpg";
+import S4 from "../../public/imgs/3.jpg";
+import S5 from "../../public/imgs/4.jpg";
+import S6 from "../../public/imgs/5.jpg";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -143,13 +146,28 @@ export default function Home() {
           className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
         />
         <Image
-          src={P1}
-          alt="Image 7"
+          src={S2}
+          alt="Poster"
           className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
         />
         <Image
-          src={P2}
-          alt="Image 8"
+          src={S3}
+          alt="Poster"
+          className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
+        />
+        <Image
+          src={S4}
+          alt="Poster"
+          className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
+        />
+        <Image
+          src={S5}
+          alt="Poster"
+          className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
+        />
+        <Image
+          src={S6}
+          alt="Poster"
           className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
         />
       </div>
