@@ -11,6 +11,7 @@ import S5 from "../../public/imgs/4.jpg";
 import S6 from "../../public/imgs/5.jpg";
 import S7 from "../../public/imgs/7.jpg";
 import S8 from "../../public/imgs/8.jpg";
+import Frame from "../../public/imgs/frame.png";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -81,7 +82,7 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <div className="flex flex-col row-start-2 items-center sm:items-start p-0 pt-2">
+      {/* <div className="flex flex-col row-start-2 items-center sm:items-start p-0 pt-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="flex flex-col justify-center items-center">
             <Image
@@ -98,6 +99,13 @@ export default function Home() {
             />
           </div>
         </div>
+      </div> */}
+      <div className="flex flex-col items-center">
+        <Image
+          src={Frame}
+          alt="Logo CTP"
+          className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[800px] h-auto"
+        />
       </div>
 
       {/* Countdown Section */}
