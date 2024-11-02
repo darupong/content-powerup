@@ -142,8 +142,13 @@ export default function Home() {
         </div>
       </div>
       <div className="pt-10">
-        <Image
+        {/* <Image
           src={PP}
+          alt="Poster"
+          className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
+        /> */}
+        <Image
+          src={S5}
           alt="Poster"
           className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
         />
@@ -159,11 +164,6 @@ export default function Home() {
         />
         <Image
           src={S4}
-          alt="Poster"
-          className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
-        />
-        <Image
-          src={S5}
           alt="Poster"
           className="w-[300px] sm:w-[500px] md:w-[600px] lg:w-[900px] h-auto p-4"
         />
